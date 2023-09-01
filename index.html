@@ -774,7 +774,7 @@ height:1100px;
 
 <ul id="set">
   <li onclick="back()"><a class="active" href="#home">Home</a></li>
-  <li><a href="#aboutme">About Me</a></li>
+  <li onclick='a1()'><a href="#aboutme">About Me</a></li>
   <li><a href="#section1">Contact</a></li>
   <li onclick="resume()"><a href="#resume">Resume</a></li>
   <li id="pset"> <abbr title="Instagram"><a href="https://instagram.com/_mr_satija?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="inst.jpeg" alt=""></a></abbr></li>
@@ -839,7 +839,7 @@ height:1100px;
 </audio>
   
   <audio>
-  <src='second.mp3' type='' id='mfetch2'>
+  <src='second.mp3' type='audio/mp3' id='mfetch2'>
 </audio>
 
   
@@ -990,6 +990,14 @@ control.style.marginLeft="30px";
 /*photo ki css starts from here */
 
 }
+
+
+  /*function for the first audio mfetch2 id ki css starts from here */
+  function a1()
+    {
+      var j=document.getElementbyId('mfetch2');
+      j.play();
+    }
 </script>
 </body>
 </html>
