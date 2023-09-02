@@ -527,23 +527,6 @@ color:#FFFF00;
 <style>
   @media (min-width:980px)and (max-width:1100px) 
   {
-    /*checkcontrol id ki css starts from here */
-    #checkcontrol
-    {
-      width:160px;
-      height:80px;
-      font-size:20px;
-      position:relative;
-      left:370px;
-      top:300px;
-      font-weight:bolder;
-      border: 10 px solid white;
-      background-color:black;
-      color:aqua;
-      font-family:monospace;
-      font-style:italic;
-      box-shadow:1px 0px 2px 4px white;
-    }
   /*runphoto id ki css starts from here */
   #runphoto{
   position:relative;
@@ -768,13 +751,13 @@ height:1100px;
    }
 </style>
 </head>
-<body id="home" onclick="j()" >
+<body id="home" >
 
 
 
 <ul id="set">
   <li onclick="back()"><a class="active" href="#home">Home</a></li>
-  <li onclick='a1()'><a href="#aboutme">About Me</a></li>
+  <li><a href="#aboutme">About Me</a></li>
   <li><a href="#section1">Contact</a></li>
   <li onclick="resume()"><a href="#resume">Resume</a></li>
   <li id="pset"> <abbr title="Instagram"><a href="https://instagram.com/_mr_satija?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="inst.jpeg" alt=""></a></abbr></li>
@@ -794,8 +777,8 @@ height:1100px;
 <div class="that">
   <div><img src="icon1.png" alt="" width="120px" height="120px"><h2>Introduction</h2><p>Hello and welcome to my portfolio website! I am thrilled to have you here. My name is Priyanshu Satija, and I am a passionate for My IT career with a strong dedication towards my skill . Through this platform, I am excited to take you on a journey through my professional experiences, creative endeavors, and accomplishments.</p></div>
   <div id="content"><img src="icon2.png" alt="" width="120px" height="120px"><h2>Skills</h2><p>"I excel in a range of technical skills crucial for crafting dynamic web applications. With expertise in C++, HTML, CSS, and JavaScript, I create captivating user interfaces and seamless functionality. My proficiency extends to Oracle databases, ensuring efficient and secure data management. I'm skilled in JSP (JavaServer Pages) for dynamic web content and possess a solid foundation in Data Structures and Algorithms, enhancing my problem-solving abilities. Explore my portfolio to see these skills in action, showcasing my dedication to delivering top-notch web experiences."    </p></div>
-  <div id="content" ><img src="guitar.png" alt="" width="120px" height="120px"><h2>Hobbies</h2><p>"In my leisure time, I find joy in spending quality moments with both family and friends, cherishing the essence of life through shared experiences. I am an avid enthusiast of podcasts, often exploring diverse topics on YouTube. Additionally, I'm passionate about playing cricket, which not only fuels my competitive spirit but also fosters teamwork. During moments of relaxation, I engage in typing practice, refining my skills in pursuit of efficiency and accuracy."</p></div>
-<div id="resume"><h1 id="ce11">Certificate 'S</h1><br><h1 id="ce11"> Certificate is not Show the Capbility of Person but <br>it show Consitency Person towards it Goals </h1><button onclick="Certificate()" id="checkcontrol">Click for See</button></div>
+  <div id="content" ><img src="icon3_.png" alt="" width="120px" height="120px"><h2>Hobbies</h2><p>"In my leisure time, I find joy in spending quality moments with both family and friends, cherishing the essence of life through shared experiences. I am an avid enthusiast of podcasts, often exploring diverse topics on YouTube. Additionally, I'm passionate about playing cricket, which not only fuels my competitive spirit but also fosters teamwork. During moments of relaxation, I engage in typing practice, refining my skills in pursuit of efficiency and accuracy."</p></div>
+<div id="resume"><h1 id="ce11">Certificate 'S</h1><br><h1 id="ce11"> Certificate is not Show the Capbility of Person but <br>it show Consitency Person towards it Goals </h1><button onclick="Certificate()">Click For See </button></div>
 </div>
 </div>
 
@@ -834,14 +817,7 @@ height:1100px;
 
 
 <br><br><br><br><br><br><br>
-<audio><source src="52 Bars_192(PagalWorld.com.se).mp3"  type="audio/mp3" id="ok"></audio>
-<script>
-  var jj=document.getElementById("ok");
-    var j=()=>{
-       jj.play();
-    }
-      </script>
-  
+
   <div class="footer" id="footer">
     <div>
     <h2>"Connecting Vision and Creativity: Exploring My Journey Through Design</h2>
@@ -853,9 +829,6 @@ height:1100px;
     <a href="https://wa.me/qr/GRXJXR7TYMF5O1">    <abbr title="Gmail-ID">  <img src="whatsapp.png" alt=""  id="gmail"></abbr></a>
   </div>
 </div>
-
-
-  
 <script>
 
 setInterval(  function main()
@@ -971,16 +944,9 @@ var back=()=>{
 document.getElementById("resume").innerHTML="Priyanshusatija";
 document.getElementById("resume").style.color="white";
 }
-
-
-
-
-
-
-  
 /*Function for Providing the Certificate */
 var Certificate=()=>{
-document.getElementById("resume").innerHTML="<img src='typing_page-0001.jpg' id='runphoto'>  <br><br><br> <button id='btn'> <- Back </button>"
+document.getElementById("resume").innerHTML="<img src='typ.jpg' id='runphoto'>  <br><br><br> <button id='btn'>Click For See</button>"
 var control=document.getElementById("btn");
 control.style.color="white";
 control.style.width="130px";
@@ -996,16 +962,6 @@ control.style.marginLeft="30px";
 /*photo ki css starts from here */
 
 }
-
-
-
-  
-  /*function for the first audio mfetch2 id ki css starts from here */
-  function a1()
-    {
-      var j=document.getElementbyId('mfetch2');
-      j.play();
-    }
 </script>
 </body>
 </html>
