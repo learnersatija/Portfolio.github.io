@@ -944,9 +944,11 @@ var back=()=>{
 document.getElementById("resume").innerHTML="Priyanshusatija";
 document.getElementById("resume").style.color="white";
 }
+
+  
 /*Function for Providing the Certificate */
 var Certificate=()=>{
-document.getElementById("resume").innerHTML="<img src='typ.jpg' id='runphoto'>  <br><br><br> <button id='btn'>Click For See</button>"
+document.getElementById("resume").innerHTML="<img src='typ.jpg' id='runphoto'>  <br><br><br> <button id='btn' id='backbutton1'>< BACK</button>"
 var control=document.getElementById("btn");
 control.style.color="white";
 control.style.width="130px";
@@ -962,6 +964,16 @@ control.style.marginLeft="30px";
 /*photo ki css starts from here */
 
 }
+  /*this function is end here  */
+  
+  
+  /*'backbutton1' id ki css starts from here  come out from the certificate section  */
+  
+  function backbutton1()
+    {
+      document.getElementById("backbutton1").innerHTML="h1 id='ce11'>Certificate 'S</h1><br><h1 id='ce11'> Certificate is not Show the Capbility of Person but <br>it show Consitency Person towards it Goals </h1><button onclick='Certificate()'>Click For See </button>";
+    }
+  
 </script>
 </body>
 </html>
