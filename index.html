@@ -1042,34 +1042,16 @@ control.style.left="70px";
 //Mode ki js starts from here 
 
 var mode=()=>{
-                   //for the body  tag css 
-                   var jj=document.getElementsByTagName("body");
-           jj[0].style.background="white";
-           var store=document.querySelectorAll("h1");
-           for(x of store)
-           {
-            x.style.color="black";
-           }
-           //for the anchor tag css 
-           var save=document.querySelectorAll("a");
-           for(x of save)
-           {
-            x.style.color="blue";
-            x.style.hover="yellow";
-           }
+          var j=document.getElementsByTagName("body");
+       j[0].style.backgroundColor="black";
+  var q=document.getElementsClassName("that");
+  q[0].style.backgroundColor="#FFCCFF";
+  q[0].style.border="2px dashed yellow";
 
-           var z=document.getElementsByTagName("footer");
-           z[0].style.background="black";
-           z[0].style.color="white";
+ document.getElementById("mode").innerText="DarkMode";
 
-
-         
-           
-           document.getElementById("mode").innerHTML="Darkmode";
-            var z =document.getElementsByClassName("that");
-                z.style.background="midnightblue";
-          
-        }
+  
+}
 
 
         var mode1=()=>{
