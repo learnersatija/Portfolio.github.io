@@ -926,7 +926,7 @@ setInterval(function okss()
 
 function resume()
 {
-document.getElementById("resume").innerHTML="<center><h1>Resume</h1></center><img src='Resume.jpg' id='changeimage'> <br> <br> <button id='btn' onclick='back()'> <- Back</button>";
+document.getElementById("resume").innerHTML="<center><h1>Resume</h1></center><img src='Resume.jpg' id='changeimage'> <br> <br> <button id="cert1">1</button> <br><br> <button id="cert2">2</button> <button id='btn' onclick='back()'> <- Back</button>";
 var j=document.getElementById("resume");
 j.style.height="850";
 j.style.widh="400px";
@@ -949,6 +949,16 @@ control.style.border="4px solid aqua";
 control.style.marginTop="70px";
 control.style.marginLeft="360px";
 
+
+  var jx=document.getElementById("cert1");
+  jx.style.fontSize="20px";
+  jx.style.fontWeight="bolder";
+  jx.style.fontFamily="monospace";
+  
+    var jxs=document.getElementById("cert2");
+  jxs.style.fontSize="20px";
+  jxs.style.fontWeight="bolder";
+  jxs.style.fontFamily="monospace";
 }
 
 /*btn id pr lagya gya function for the back facility*/
