@@ -770,7 +770,7 @@ height:1100px;
 <ul id="set">
   <li onclick="back()"><a class="active" href="#home">Home</a></li>
   <li onclick=" runss()"><a href="#aboutme">About Me</a></li>
-  <li><a href="#section1">Contact</a></li>
+  <li onclick="runss1()"><a href="#section1">Contact</a></li>
   <li onclick="resume()"><a href="#resume">Resume</a></li>
   <li id="pset"> <abbr title="Instagram"><a href="https://instagram.com/_mr_satija?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="inst.jpeg" alt=""></a></abbr></li>
     <li id="pset1"><abbr title="Linkedin"><a href="https://www.linkedin.com/in/priyanshu-satija-a92b7024a"> <img src="l.png" alt=""></a></abbr></li>
@@ -992,13 +992,22 @@ control.style.left="70px";
   
 </script>
   <audio src="tts_audio_1693361937519.wav" type="audio/wav" id="runsss"></audio>
+  <audio src="tts_audio_1693361955828.mp3" type="audio/mp3" id="runsss1"></audio>
   <script>
+        /*About me ka function for play audio of about me */
     function runss()
       {
         var j=document.getElementById("runsss");
         j.play();
       }
-    
+
+
+    /*contact me ka function for play audio of contact me */
+      function runss1()
+      {
+        var j=document.getElementById("runsss1");
+        j.play();
+      }
   </script>
 </body>
 </html>
