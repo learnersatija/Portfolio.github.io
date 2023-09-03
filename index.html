@@ -838,6 +838,7 @@ height:1100px;
     <p>Designed and built by Priyanshu Satija.</p>
   </div>
   <div>
+  <h1 id="mode" onclick="mode()">Ligthmode</h1>
     <a href="https://wa.me/qr/GRXJXR7TYMF5O1">    <abbr title="Gmail-ID">  <img src="whatsapp.png" alt=""  id="gmail"></abbr></a>
   </div>
 </div>
@@ -1024,6 +1025,116 @@ control.style.left="70px";
         var j=document.getElementById("runsss1");
         j.play();
       }
+  </script>
+
+  
+  
+  <script>
+
+
+
+//Mode ki js starts from here 
+
+var mode=()=>{
+                   //for the body  tag css 
+                   var jj=document.getElementsByTagName("body");
+           jj[0].style.background="white";
+           var store=document.querySelectorAll("h1");
+           for(x of store)
+           {
+            x.style.color="black";
+           }
+           //for the anchor tag css 
+           var save=document.querySelectorAll("a");
+           for(x of save)
+           {
+            x.style.color="blue";
+            x.style.hover="yellow";
+           }
+
+           var z=document.getElementsByTagName("footer");
+           z[0].style.background="black";
+           z[0].style.color="white";
+
+
+         
+           
+           document.getElementById("mode").innerHTML="Darkmode";
+            var z =document.getElementById("that");
+                z.style.background="midnightblue";
+          
+        }
+
+
+        var mode1=()=>{
+
+                var z =document.getElementById("main");
+                z.style.background="white";
+                              //for the body  tag css 
+                var jj=document.getElementsByTagName("body");
+           jj[0].style.background="rgb(12, 158, 255)";
+           var store=document.querySelectorAll("h1");
+           for(x of store)
+           {
+            x.style.color="black";
+           }
+           //for the anchor tag css 
+           var save=document.querySelectorAll("a");
+           for(x of save)
+           {
+            x.style.color="white";
+           }
+
+           var z=document.getElementsByTagName("footer");
+           z[0].style.background="blue";
+           z[0].style.color="white";
+
+
+           var zz=document.getElementById("insidemain");
+           zz.style.background="white";
+           var zy=document.getElementsByTagName("header");
+           zy[0].style.borderBottom="8px solid black";
+           zy[0].style.color="white";
+           zy[0].style.background="blue";
+
+        }
+
+
+///Promise code which help to run the mode js in both case light and width 
+var modes=()=>{
+    let pro=new Promise(function(resolve,reject)
+{
+    var j=document.getElementById("mode").innerHTML;
+    if(j=="Darkmode")
+  {
+    resolve(mode);
+  //  var contain=document.getElementById("a2");
+    //contain.play();
+  
+  }
+  else if(j=="Lightmode")
+  {
+    reject(mode1);
+    document.getElementById("mode").innerHTML="Darkmode";
+    //var contain=document.getElementById("a1");
+    //contain.play();
+  }
+
+});
+pro.then(
+    function(value)
+    {
+        mode();
+    },
+    function(value)
+    {
+        mode1();
+    }
+);
+
+}//function is end here
+
+
   </script>
 </body>
 </html>
