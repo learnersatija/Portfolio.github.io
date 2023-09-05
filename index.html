@@ -1316,7 +1316,6 @@ var mode=()=>{
      {
        x[i].style.color="white";
      }
-  document.getElementById("mode").innerText="Lightmode";
         }
 
 
@@ -1328,16 +1327,14 @@ var modes=()=>{
     if(j=="Darkmode")
   {
     resolve(mode);
-  //  var contain=document.getElementById("a2");
-    //contain.play();
   
+  document.getElementById("mode").innerText="Lightmode";
   }
-  else if(j=="Lightmode")
+  else if(j=="Lighhtmode")
   {
     reject(mode1);
     document.getElementById("mode").innerHTML="Darkmode";
-    var contain=document.getElementById("a1");
-    contain.play();
+    
   }
 
 });
