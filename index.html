@@ -770,10 +770,12 @@ height:1100px;
 <div id="thatmain"> <h1> ABOUT ME</h1>
   <br><br>
 <div class="that">
-  <div><img src="icon1.png" alt="" width="120px" height="120px"><h2>Introduction</h2><p>Hello and welcome to my portfolio website! I am thrilled to have you here. My name is Priyanshu Satija, and I am a passionate for My IT career with a strong dedication towards my skill . Through this platform, I am excited to take you on a journey through my professional experiences, creative endeavors, and accomplishments.</p></div>
+   <div><img src="icon1.png" alt="" width="120px" height="120px"><h2>Introduction</h2><p>Hello and welcome to my portfolio website! I am thrilled to have you here. My name is Priyanshu Satija, and I am a passionate for My IT career with a strong dedication towards my skill . Through this platform, I am excited to take you on a journey through my professional experiences, creative endeavors, and accomplishments.</p></div>
   <div id="content"><img src="icon2.png" alt="" width="120px" height="120px"><h2>Skills</h2><p>"I excel in a range of technical skills crucial for crafting dynamic web applications. With expertise in C++, HTML, CSS, and JavaScript, I create captivating user interfaces and seamless functionality. My proficiency extends to Oracle databases, ensuring efficient and secure data management. I'm skilled in JSP (JavaServer Pages) for dynamic web content and possess a solid foundation in Data Structures and Algorithms, enhancing my problem-solving abilities. Explore my portfolio to see these skills in action, showcasing my dedication to delivering top-notch web experiences."    </p></div>
-  <div id="content" ><img src="icon3_.png" alt="" width="120px" height="120px"><h2>Hobbies</h2><p>"In my leisure time, I find joy in spending quality moments with both family and friends, cherishing the essence of life through shared experiences. I am an avid enthusiast of podcasts, often exploring diverse topics on YouTube. Additionally, I'm passionate about playing cricket, which not only fuels my competitive spirit but also fosters teamwork. During moments of relaxation, I engage in typing practice, refining my skills in pursuit of efficiency and accuracy."</p></div>
-<div id="resume"><h1 id="ce11">Certificate 'S</h1><br><h1 id="ce11"> Certificate is not Show the Capbility of Person but <br>it show Consitency Person towards it Goals </h1><button onclick="Certificate()">Click For See </button></div>
+  <div id="content" ><img src="guitar.png" alt="" width="120px" height="120px"><h2>Hobbies</h2><p>"In my leisuresd time, I find joy in spending quality moments with both family and friends, cherishing the essence of life through shared experiences. I am an avid enthusiast of podcasts, often exploring diverse topics on YouTube. Additionally, I'm passionate about playing cricket, which not only fuels my competitive spirit but also fosters teamwork. During moments of relaxation, I engage in typing practice, refining my skills in pursuit of efficiency and accuracy."</p></div>
+  <div id="resume"><h1 id="ce11">Certificate 'S</h1><br><h1 id="ce11"> Certificate is not Show the Capbility of Person but <br>it show Consitency Person towards it Goals </h1><button onclick="Certificate()" id="btn">Click For See </button></div/>
+<br>
+
 </div>
 </div>
 
@@ -781,6 +783,16 @@ height:1100px;
 <br><br><br><br><br><br><br>
 
 
+<br><br><br>
+   <div class="portfolio-container">
+        <h1>My Portfolio</h1>
+        <p>Welcome to my portfolio! Here's a video showcasing some of my work:</p>
+        <video controls>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+  <br><br><br>
 
 
 <section class="contact-section" id="section1">
@@ -821,10 +833,15 @@ height:1100px;
     <p>Designed and built by Priyanshu Satija.</p>
   </div>
   <div>
+  <h1 id="mode" onclick="mode()">Ligthmode</h1>
     <a href="https://wa.me/qr/GRXJXR7TYMF5O1">    <abbr title="Gmail-ID">  <img src="whatsapp.png" alt=""  id="gmail"></abbr></a>
   </div>
 </div>
-<script>
+
+
+
+
+  <script>
 
 setInterval(  function main()
 {
@@ -909,7 +926,7 @@ setInterval(function okss()
 
 function resume()
 {
-document.getElementById("resume").innerHTML="<center><h1>Resume</h1></center><img src='Resume.jpg' id='changeimage'> <br> <br> <button id='btn' onclick='back()'> <- Back</button>";
+document.getElementById("resume").innerHTML="<center><h1>Resume</h1></center><img src='Resume.jpg' id='changeimage'> <br> <br>  <button id='btn' onclick='back()'> <- Back</button>";
 var j=document.getElementById("resume");
 j.style.height="850";
 j.style.widh="400px";
@@ -932,16 +949,19 @@ control.style.border="4px solid aqua";
 control.style.marginTop="70px";
 control.style.marginLeft="360px";
 
+
 }
 
 /*btn id pr lagya gya function for the back facility*/
 var back=()=>{
-document.getElementById("resume").innerHTML="Priyanshusatija";
-document.getElementById("resume").style.color="white";
+document.getElementById("resume").innerHTML="<h1 id='ce11'>Certificate 'S</h1><br><h1 id='ce11'> Certificate is not Show the Capbility of Person but <br>it show Consitency Person towards it Goals </h1><button onclick='Certificate()' id='btn'>Click For See </button>";
+
 }
+
+  
 /*Function for Providing the Certificate */
 var Certificate=()=>{
-document.getElementById("resume").innerHTML="<img src='typ.jpg' id='runphoto'>  <br><br><br> <button id='btn'>Click For See</button>"
+document.getElementById("resume").innerHTML='<h1>Certificate</h1><br><img src="typing_page-0001.jpg" id="runphoto"> <button id="cert1">1</button> <button id="cert2">2</button> <button id="cert3">3</button>  <button id="btn" id="backbutton1" onclick="backss()"> <- BACK</button>'
 var control=document.getElementById("btn");
 control.style.color="white";
 control.style.width="130px";
@@ -952,12 +972,178 @@ control.style.background="black";
 control.style.borderRadius="20%";
 control.style.border="4px solid aqua";
 
-control.style.marginLeft="30px";
+control.style.position="relative";
+control.style.bottom="250px";
+control.style.left="70px";
 
-/*photo ki css starts from here */
+/*this is for increase the height of resume id related div*/
 
+  document.getElementById("resume").style.height="1700px";
+  
+/*cert1 id ke ander ki  css by js starts here */
+function  metothat()
+  {
+    
+  class meto{
+  constructor()
+  {
+  }
+  // cert1 id se related css starts from here  which is for the button facility provide to the certificate button 
+    okcert1=()=>{   //Method of the class starts from here 
+ var j=document.getElementById("cert1");
+  j.style.width="100px";
+  j.style.height="100px";
+  j.style.color="white";
+  j.style.backgroundColor="black";  
+  j.style.border="3px solid white";
+    j.style.fontSize="20px";
+    
+  // cert2 id se related css starts from here  which is for the button facility provide to the certificate button  
+    var j=document.getElementById("cert2");
+  j.style.width="100px";
+  j.style.color="white";
+  j.style.height="100px";
+  j.style.backgroundColor="black";
+  j.style.border="3px solid white";
+  j.style.fontSize="20px";
+
+      
+  // cert3 id se related css starts from here  which is for the button facility provide to the certificate button  
+    var j=document.getElementById("cert3");
+  j.style.width="100px";
+  j.style.color="white";
+  j.style.height="100px";
+  j.style.backgroundColor="black";
+  j.style.border="3px solid white";
+  j.style.fontSize="20px";
 }
+
+    
+}//Class end here 
+
+  var cl=new meto;
+  cl.okcert1();
+  }  //function is end here
+  
+metothat();
+
+  
+  /*photo ki css starts from here */
+
+
+  var jx=document.getElementById("cert1");
+  jx.style.fontSize="20px";
+  jx.style.fontWeight="bolder";
+  jx.style.fontFamily="monospace";
+  
+    var jxs=document.getElementById("cert2");
+  jxs.style.fontSize="20px";
+  jxs.style.fontWeight="bolder";
+  jxs.style.fontFamily="monospace";
+  
+}
+  /*this function is end here  */
+  
+
+
+  
+  /*'backbutton1' id ki css starts from here  come out from the certificate section  */
+  
+  function backss()
+    {
+      document.getElementById("resume").innerHTML="<h1 id='ce11'>Certificate 'S</h1><br><h1 id='ce11'> Certificate is not Show the Capbility of Person but <br>it show Consitency Person towards it Goals </h1><button onclick='Certificate()'>Click For See </button>";
+    }
+  
 </script>
+  <audio src="tts_audio_1693361937519.wav" type="audio/wav" id="runsss"></audio>
+  <audio src="tts_audio_1693361955828.mp3" type="audio/mp3" id="runsss1"></audio>
+   <audio src="52 Bars_192(PagalWorld.com.se).mp3" type="audio/mp3" id="runsss2"></audio>
+  
+  <script>
+    function runsss2()
+      {
+        document.getElementById("runsss2").play();
+      }
+        /*About me ka function for play audio of about me */
+    function runss()
+      {
+        var j=document.getElementById("runsss");
+        j.play();
+      }
+
+
+    /*contact me ka function for play audio of contact me */
+      function runss1()
+      {
+        var j=document.getElementById("runsss1");
+        j.play();
+      }
+  </script>
+
+  
+  
+  <script>
+
+
+
+//Mode ki js starts from here 
+
+var mode=()=>{
+          var j=document.getElementsByTagName("body");
+       j[0].style.backgroundColor="black";
+  var q=document.getElementsByClassName("that");
+  q[0].style.backgroundColor="#FFCCFF";
+  q[0].style.border="3px solid yellow";
+
+ document.getElementById("mode").innerText="DarkMode";
+
+  
+}
+
+
+        var mode1=()=>{
+ document.getElementById("mode").innerText="LightMode";
+
+        }
+
+
+///Promise code which help to run the mode js in both case light and width 
+var modes=()=>{
+    let pro=new Promise(function(resolve,reject)
+{
+    var j=document.getElementById("mode").innerHTML;
+    if(j=="Darkmode")
+  {
+    resolve(mode);
+  //  var contain=document.getElementById("a2");
+    //contain.play();
+  
+  }
+  else if(j=="Lightmode")
+  {
+    reject(mode1);
+    document.getElementById("mode").innerHTML="Darkmode";
+    //var contain=document.getElementById("a1");
+    //contain.play();
+  }
+
+});
+pro.then(
+    function(value)
+    {
+        mode();
+    },
+    function(value)
+    {
+        mode1();
+    }
+);
+
+}//function is end here
+
+
+  </script>
+
 </body>
 </html>
 
