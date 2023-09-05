@@ -322,6 +322,12 @@ ul li img{
 <style>
   @media (min-width:480px) and (max-width:1100px) 
 {
+  
+.that{
+background-color:#FFCCFF;
+border:3px solid yellow;
+  
+}
 #main{
   height: 800px;
   width: 800px;
@@ -341,11 +347,14 @@ font-size:25px;
 }
 /*body ke background ki css startsfrom here */
 body{
-background-color: #37474F;
+background-color:black;
 }
 
+  
 .that{
-background-color: #37474F;
+background-color:#FFCCFF;
+border:3px solid yellow;
+  
 }
 .that div
 {
@@ -623,7 +632,7 @@ font-size:25px;
 }
 /*body ke background ki css startsfrom here */
 body{
-background-color: #37474F;
+background-color:black;
 }
 /*ul ki css starts from here */
 ul{
@@ -631,7 +640,9 @@ height:90px;
 font-family:monospace;
 }
 .that{
-background-color: #37474F;
+background-color:#FFCCFF;
+border:3px solid yellow;
+  
 }
 ul li a{
 font-size:30px;
@@ -741,6 +752,12 @@ height:1100px;
 <style>
    @media (min-width:1100px)and (max-width:1400px)
    {
+     
+.that{
+background-color:#FFCCFF;
+border:3px solid yellow;
+  
+}
  /*btn id ki css starts from here */
     #btn{
       width:200px;
@@ -1250,15 +1267,18 @@ var mode=()=>{
   q[0].style.backgroundColor="#FFCCFF";
   q[0].style.border="3px solid yellow";
 
- document.getElementById("mode").innerText="DarkMode";
+ document.getElementById("mode").innerText="Darkmode";
 
   
 }
 
 
         var mode1=()=>{
- document.getElementById("mode").innerText="LightMode";
 
+  var q=document.getElementsByClassName("that");
+  q[0].style.backgroundColor="#00CCFF";
+  q[0].style.border="3px solid white";
+           document.getElementById("mode").innerText="Lightmode";
         }
 
 
@@ -1278,8 +1298,8 @@ var modes=()=>{
   {
     reject(mode1);
     document.getElementById("mode").innerHTML="Darkmode";
-    //var contain=document.getElementById("a1");
-    //contain.play();
+    var contain=document.getElementById("a1");
+    contain.play();
   }
 
 });
