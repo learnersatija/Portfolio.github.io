@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>Portfolio</title>
-
 <style>
 body{
 
@@ -196,34 +195,136 @@ ul li img{
   }
 </style>
 
+<style>
+  @media (min-width:400px) and (max-width:480px) 
+{
 
+  
+  /*main id ke ander ki css starts from here */
+  #main img{
+    border-radius: 100%;
+    width: 150px;
+    border: 2px solid ;
+  }
+  /*gmail id ki css starts from here */
+  #gmail{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+/*main id ki css starts from here */
+#main{
+  display: flexbox;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 470px;
+  border: 4px ;
+  margin: auto;
+  box-shadow: 1px 1px 3px 8px rgb(238, 240, 231);
+  box-sizing: border-box;
+  border-radius: 30px;
+ }
+
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: lightgray;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: blue;
+ font-size:20px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.active{
+background-color: gray;
+color: white;
+}
+li a:hover {
+  background-color: orange;
+  color: white;
+}
+
+/*pset id ki css starts from here */
+#pset{
+    position: relative;
+    left: 0px;
+    right: 600px;
+}
+
+/*pset1 id ki css starts from here */
+#pset1{
+    position: relative;
+    left: 0;
+    right: 620px;
+    cursor: pointer;
+}
+ul li img{
+    width: 40px;
+    border-radius: 20px;
+    word-spacing: 10px;
+    cursor: pointer;
+}
+/*that class ki css starts from here */
+.that
+{
+  display:  flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+
+  /* Styling for the main contact section */
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+  }
+
+  /* Styling for the left side content */
+  .left-content {
+   
+    padding-right: 0px;
+  }
+
+  /* Styling for the right side content (contact form) */
+  .right-content {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.678);
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+}
 </style>
 
 
 
 
-
-
-
-  
 <style>
-  @media (min-width:180px) and (max-width:1100px) 
+  @media (min-width:480px) and (max-width:1100px) 
 {
-
-  /*runphoto id ki css starts from here */
-  #runphoto{
-  position:relative;
-  left:30px;
-  top:20px;
-  }
-#resume h1{
-font-size:40px;
-}
-
-*main id ki css starts from here */
 #main{
   height: 800px;
-  width: 900px;
+  width: 800px;
   border: 4px ;
   margin: auto;
   background-color:#010203;
@@ -240,19 +341,136 @@ font-size:25px;
 }
 /*body ke background ki css startsfrom here */
 body{
-background-color: #0e8e337;
+background-color: #37474F;
 }
-/*ul ki css starts from here */
-ul{
-height:90px;
-font-family:monospace;
-}
+
 .that{
-background-color:#0e8e337;
+background-color: #37474F;
+}
+.that div
+{
+background-color:black;
+}
+ul{
+height:80px;
 }
 ul li a{
 font-size:30px;
 }
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: lightgray;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: blue;
+ font-size:20px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.active{
+background-color: gray;
+color: white;
+}
+li a:hover {
+  background-color: orange;
+  color: white;
+}
+
+/*pset id ki css starts from here */
+#pset{
+    position: relative;
+    left: 0px;
+    right: 600px;
+}
+
+/*pset1 id ki css starts from here */
+#pset1{
+    position: relative;
+    left: 0;
+    right: 620px;
+    cursor: pointer;
+}
+ul li img{
+    width: 40px;
+    border-radius: 20px;
+    word-spacing: 10px;
+    cursor: pointer;
+}    
+
+/*main id ki css starts from here */
+#main{
+  height: 800px;
+  width: 870px;
+  border: 4px ;
+  margin: auto;
+  box-shadow:0px 1px 4px 4px rgb(178, 90, 205);
+  box-sizing: border-box;
+  border-radius: 30px;
+  
+}
+/*that class ki css starts from here */
+.that
+{
+  display:  flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}    
+
+
+
+
+  /* Styling for the main contact section */
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+  }
+
+  /* Styling for the left side content */
+  .left-content {
+   
+    padding-right: 0px;
+  }
+
+  /* Styling for the right side content (contact form) */
+  .right-content {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.678);
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+.that div{
+width:850px;
+height:1450px;
+}
+.that div p{
+font-family:sans-serif;
+font-size:60px;
+}
+#content p{
+font-family:sans-serif;
+font-size:55px;
+}
+
+
   /* Styling for the main contact section */
   .contact-section {
     display: flex;
@@ -275,26 +493,12 @@ font-size:30px;
     flex: 1;
     height:130px;
     width:600px;
-    background-color:gray;
+    background-color: rgba(255, 255, 255, 0.678);
     border: 1px solid #ddd;
     border-radius: 5px;
   }
-  .right-content{
-  background-color:white;
-  }
-  /*that class ki starts from here */
-.that div
-{
-width:900px;
-height:1300px;
-background-color:black;
-color:aqua;
-}
-/*main ke ander ki image ki css starts from here */
-#main img{
-width:400px;
-}
-/*footer ke ander ke text ki css starts from here*/
+
+  /*footer ke ander ke text ki css starts from here*/
 #footer {
 font-size:30px;
 }
@@ -302,17 +506,6 @@ font-size:30px;
 /*footer ke ander h2 ki css starts from here*/
 #footer h2{
 font-size:35px;
-}
-/*that class ke ander ke div ke ander ke p tag ki css starts from here */
-.that div p{
-font-size:45px;
-font-family:monospace;
-font-Style:oblique;
-}
-#content p{
-font-size:45px;
-font-family:monospace;
-font-Style:oblique;
 }
 /*resume id ke ander ki css starts from here */
 #resume img{
@@ -322,85 +515,15 @@ right:40px;
 box-sizing:border-box;
 height:1100px;
 }
-/*that class ke ander ke overflow ki css starts from here */
-.that div
-{
-overflow:
+
+/*ce11 id ki css start from here */
+#ce11{
+font-family:sans;
+color:#FFFF00;
 }
-    /*btn id ki css starts from here */
-    #btn{
-      width:200px;
-      height:100px;
-      border:3px solid aqua;
-      color:white;
-      margin-top:300px;
-      margin-left:500px;
-      font-size:20px;
-      background-color:black;
-      font-family:monospace;
-      position:relative;
-      bottom:12px;
-      left:100px;
-  }
-/*cert1 id ki css starts from here */
-#cert1{
-position:relative;
-top:280px;
-}
-
-    /*cert2 id ki css starts from here */
-#cert2{
-position:relative;
-top:280px;
-}
-/*cert3 id ki css starts from here */
-#cert3{
-position:relative;
-top:280px;
-}
-
-      /* Style for the container div */
-        .portfolio-container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f2f2f2;
-            border: 2px solid pink;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-
-        /* Style for the video element */
-        video {
-            width: 100%;
-            max-height: 400px;
-            border-radius: 10px;
-        }
-
-        /* Additional styles for the portfolio content */
-        h1 {
-            font-size: 34px;
-            color: aqua;
-        }
-
-        .portfolio-container  p {
-            font-size: 18px;
-            color:black;
-        }
-
-  
 }
 
 </style>
-
-
-
-
-
-
-
-  
 <style>
   @media (min-width:980px)and (max-width:1100px) 
   {
@@ -434,7 +557,7 @@ font-size:25px;
 }
 /*body ke background ki css startsfrom here */
 body{
-background-color: #0e8e337;
+background-color: #37474F;
 }
 /*ul ki css starts from here */
 ul{
@@ -442,7 +565,7 @@ height:90px;
 font-family:monospace;
 }
 .that{
-background-color:#0e8e337;
+background-color: #37474F;
 }
 ul li a{
 font-size:30px;
@@ -516,95 +639,16 @@ right:40px;
 box-sizing:border-box;
 height:1100px;
 }
-/*that class ke ander ke overflow ki css starts from here */
-.that div
-{
-overflow:
 }
-    /*btn id ki css starts from here */
-    #btn{
-      width:200px;
-      height:100px;
-      border:3px solid aqua;
-      color:white;
-      margin-top:300px;
-      margin-left:500px;
-      font-size:20px;
-      background-color:black;
-      font-family:monospace;
-      position:relative;
-      bottom:12px;
-      left:100px;
-  }
-/*cert1 id ki css starts from here */
-#cert1{
-position:relative;
-top:280px;
-}
-
-    /*cert2 id ki css starts from here */
-#cert2{
-position:relative;
-top:280px;
-}
-/*cert3 id ki css starts from here */
-#cert3{
-position:relative;
-top:280px;
-}
-
-      /* Style for the container div */
-        .portfolio-container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f2f2f2;
-            border: 2px solid pink;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-
-        /* Style for the video element */
-        video {
-            width: 100%;
-            max-height: 400px;
-            border-radius: 10px;
-        }
-
-        /* Additional styles for the portfolio content */
-        h1 {
-            font-size: 34px;
-            color: aqua;
-        }
-
-        .portfolio-container  p {
-            font-size: 18px;
-            color:black;
-        }
-
-        /* Customize these styles to your liking */
-  }
 </style>
 
 <style>
    @media (min-width:1300px)and (max-width:1400px)
    {
-
-     /*runphoto id ki css starts from here */
-  #runphoto{
-  position:relative;
-  left:30px;
-  top:20px;
-  }
-#resume h1{
-font-size:40px;
-}
-
-*main id ki css starts from here */
+   /*main id ki css starts from here */
 #main{
   height: 800px;
-  width: 900px;
+  width: 800px;
   border: 4px ;
   margin: auto;
   background-color:#010203;
@@ -621,7 +665,7 @@ font-size:25px;
 }
 /*body ke background ki css startsfrom here */
 body{
-background-color: #0e8e337;
+background-color: #37474F;
 }
 /*ul ki css starts from here */
 ul{
@@ -629,7 +673,7 @@ height:90px;
 font-family:monospace;
 }
 .that{
-background-color:#0e8e337;
+background-color: #37474F;
 }
 ul li a{
 font-size:30px;
@@ -666,7 +710,7 @@ font-size:30px;
   /*that class ki starts from here */
 .that div
 {
-width:900px;
+width:800px;
 height:1300px;
 background-color:black;
 color:aqua;
@@ -686,14 +730,10 @@ font-size:35px;
 }
 /*that class ke ander ke div ke ander ke p tag ki css starts from here */
 .that div p{
-font-size:45px;
-font-family:monospace;
-font-Style:oblique;
+font-size:50px;
 }
 #content p{
-font-size:45px;
-font-family:monospace;
-font-Style:oblique;
+font-size:50px;
 }
 /*resume id ke ander ki css starts from here */
 #resume img{
@@ -703,72 +743,6 @@ right:40px;
 box-sizing:border-box;
 height:1100px;
 }
-/*that class ke ander ke overflow ki css starts from here */
-.that div
-{
-overflow:
-}
-    /*btn id ki css starts from here */
-    #btn{
-      width:200px;
-      height:100px;
-      border:3px solid aqua;
-      color:white;
-      margin-top:300px;
-      margin-left:500px;
-      font-size:20px;
-      background-color:black;
-      font-family:monospace;
-      position:relative;
-      bottom:12px;
-      left:100px;
-  }
-/*cert1 id ki css starts from here */
-#cert1{
-position:relative;
-top:280px;
-}
-
-    /*cert2 id ki css starts from here */
-#cert2{
-position:relative;
-top:280px;
-}
-/*cert3 id ki css starts from here */
-#cert3{
-position:relative;
-top:280px;
-}
-
-      /* Style for the container div */
-        .portfolio-container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f2f2f2;
-            border: 2px solid pink;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-
-        /* Style for the video element */
-        video {
-            width: 100%;
-            max-height: 400px;
-            border-radius: 10px;
-        }
-
-        /* Additional styles for the portfolio content */
-        h1 {
-            font-size: 34px;
-            color: aqua;
-        }
-
-        .portfolio-container  p {
-            font-size: 18px;
-            color:black;
-        }
    }
 </style>
 </head>
@@ -778,9 +752,9 @@ top:280px;
 
 <ul id="set">
   <li onclick="back()"><a class="active" href="#home">Home</a></li>
-  <li onclick=" runss()"><a href="#aboutme">About Me</a></li>
-  <li onclick="runss1()"><a href="#section1">Contact</a></li>
-  <li onclick="resume()  ,    runsss2() "><a href="#resume">Resume</a></li>
+  <li><a href="#aboutme">About Me</a></li>
+  <li><a href="#section1">Contact</a></li>
+  <li onclick="resume()"><a href="#resume">Resume</a></li>
   <li id="pset"> <abbr title="Instagram"><a href="https://instagram.com/_mr_satija?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="inst.jpeg" alt=""></a></abbr></li>
     <li id="pset1"><abbr title="Linkedin"><a href="https://www.linkedin.com/in/priyanshu-satija-a92b7024a"> <img src="l.png" alt=""></a></abbr></li>
     
@@ -798,9 +772,8 @@ top:280px;
 <div class="that">
   <div><img src="icon1.png" alt="" width="120px" height="120px"><h2>Introduction</h2><p>Hello and welcome to my portfolio website! I am thrilled to have you here. My name is Priyanshu Satija, and I am a passionate for My IT career with a strong dedication towards my skill . Through this platform, I am excited to take you on a journey through my professional experiences, creative endeavors, and accomplishments.</p></div>
   <div id="content"><img src="icon2.png" alt="" width="120px" height="120px"><h2>Skills</h2><p>"I excel in a range of technical skills crucial for crafting dynamic web applications. With expertise in C++, HTML, CSS, and JavaScript, I create captivating user interfaces and seamless functionality. My proficiency extends to Oracle databases, ensuring efficient and secure data management. I'm skilled in JSP (JavaServer Pages) for dynamic web content and possess a solid foundation in Data Structures and Algorithms, enhancing my problem-solving abilities. Explore my portfolio to see these skills in action, showcasing my dedication to delivering top-notch web experiences."    </p></div>
-  <div id="content" ><img src="guitar.png" alt="" width="120px" height="120px"><h2>Hobbies</h2><p>"In my leisuresd time, I find joy in spending quality moments with both family and friends, cherishing the essence of life through shared experiences. I am an avid enthusiast of podcasts, often exploring diverse topics on YouTube. Additionally, I'm passionate about playing cricket, which not only fuels my competitive spirit but also fosters teamwork. During moments of relaxation, I engage in typing practice, refining my skills in pursuit of efficiency and accuracy."</p></div>
-<div id="resume"><h1 id="ce11">Certificate 'S</h1><br><h1 id="ce11"> Certificate is not Show the Capbility of Person but <br>it show Consitency Person towards it Goals </h1><button onclick="Certificate()" id="btn">Click For See </button></div/>
-<br>
+  <div id="content" ><img src="icon3_.png" alt="" width="120px" height="120px"><h2>Hobbies</h2><p>"In my leisure time, I find joy in spending quality moments with both family and friends, cherishing the essence of life through shared experiences. I am an avid enthusiast of podcasts, often exploring diverse topics on YouTube. Additionally, I'm passionate about playing cricket, which not only fuels my competitive spirit but also fosters teamwork. During moments of relaxation, I engage in typing practice, refining my skills in pursuit of efficiency and accuracy."</p></div>
+<div id="resume"><h1 id="ce11">Certificate 'S</h1><br><h1 id="ce11"> Certificate is not Show the Capbility of Person but <br>it show Consitency Person towards it Goals </h1><button onclick="Certificate()">Click For See </button></div>
 </div>
 </div>
 
@@ -808,17 +781,8 @@ top:280px;
 <br><br><br><br><br><br><br>
 
 
-<br><br><br>
-   <div class="portfolio-container">
-        <h1>My Portfolio</h1>
-        <p>Welcome to my portfolio! Here's a video showcasing some of my work:</p>
-        <video controls>
-            <source src="your-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
 
-  <br><br><br>
+
 <section class="contact-section" id="section1">
   <div class="left-content">
     <h2>Contact Information</h2>
@@ -843,7 +807,7 @@ top:280px;
   </div>
 
 </section>
-  
+
 
 
 
@@ -857,7 +821,6 @@ top:280px;
     <p>Designed and built by Priyanshu Satija.</p>
   </div>
   <div>
-  <h1 id="mode" onclick="mode()">Ligthmode</h1>
     <a href="https://wa.me/qr/GRXJXR7TYMF5O1">    <abbr title="Gmail-ID">  <img src="whatsapp.png" alt=""  id="gmail"></abbr></a>
   </div>
 </div>
@@ -946,7 +909,7 @@ setInterval(function okss()
 
 function resume()
 {
-document.getElementById("resume").innerHTML="<center><h1>Resume</h1></center><img src='Resume.jpg' id='changeimage'> <br> <br>  <button id='btn' onclick='back()'> <- Back</button>";
+document.getElementById("resume").innerHTML="<center><h1>Resume</h1></center><img src='Resume.jpg' id='changeimage'> <br> <br> <button id='btn' onclick='back()'> <- Back</button>";
 var j=document.getElementById("resume");
 j.style.height="850";
 j.style.widh="400px";
@@ -969,19 +932,16 @@ control.style.border="4px solid aqua";
 control.style.marginTop="70px";
 control.style.marginLeft="360px";
 
-
 }
 
 /*btn id pr lagya gya function for the back facility*/
 var back=()=>{
-document.getElementById("resume").innerHTML="<h1 id='ce11'>Certificate 'S</h1><br><h1 id='ce11'> Certificate is not Show the Capbility of Person but <br>it show Consitency Person towards it Goals </h1><button onclick='Certificate()' id='btn'>Click For See </button>";
-
+document.getElementById("resume").innerHTML="Priyanshusatija";
+document.getElementById("resume").style.color="white";
 }
-
-  
 /*Function for Providing the Certificate */
 var Certificate=()=>{
-document.getElementById("resume").innerHTML='<h1>Certificate</h1><br><img src="typing_page-0001.jpg" id="runphoto"> <button id="cert1">1</button> <button id="cert2">2</button> <button id="cert3">3</button>  <button id="btn" id="backbutton1" onclick="backss()"> <- BACK</button>'
+document.getElementById("resume").innerHTML="<img src='typ.jpg' id='runphoto'>  <br><br><br> <button id='btn'>Click For See</button>"
 var control=document.getElementById("btn");
 control.style.color="white";
 control.style.width="130px";
@@ -992,177 +952,12 @@ control.style.background="black";
 control.style.borderRadius="20%";
 control.style.border="4px solid aqua";
 
-control.style.position="relative";
-control.style.bottom="250px";
-control.style.left="70px";
+control.style.marginLeft="30px";
 
-/*this is for increase the height of resume id related div*/
+/*photo ki css starts from here */
 
-  document.getElementById("resume").style.height="1700px";
-  
-/*cert1 id ke ander ki  css by js starts here */
-function  metothat()
-  {
-    
-  class meto{
-  constructor()
-  {
-  }
-  // cert1 id se related css starts from here  which is for the button facility provide to the certificate button 
-    okcert1=()=>{   //Method of the class starts from here 
- var j=document.getElementById("cert1");
-  j.style.width="100px";
-  j.style.height="100px";
-  j.style.color="white";
-  j.style.backgroundColor="black";  
-  j.style.border="3px solid white";
-    j.style.fontSize="20px";
-    
-  // cert2 id se related css starts from here  which is for the button facility provide to the certificate button  
-    var j=document.getElementById("cert2");
-  j.style.width="100px";
-  j.style.color="white";
-  j.style.height="100px";
-  j.style.backgroundColor="black";
-  j.style.border="3px solid white";
-  j.style.fontSize="20px";
-
-      
-  // cert3 id se related css starts from here  which is for the button facility provide to the certificate button  
-    var j=document.getElementById("cert3");
-  j.style.width="100px";
-  j.style.color="white";
-  j.style.height="100px";
-  j.style.backgroundColor="black";
-  j.style.border="3px solid white";
-  j.style.fontSize="20px";
 }
-
-    
-}//Class end here 
-
-  var cl=new meto;
-  cl.okcert1();
-  }  //function is end here
-  
-metothat();
-
-  
-  /*photo ki css starts from here */
-
-
-  var jx=document.getElementById("cert1");
-  jx.style.fontSize="20px";
-  jx.style.fontWeight="bolder";
-  jx.style.fontFamily="monospace";
-  
-    var jxs=document.getElementById("cert2");
-  jxs.style.fontSize="20px";
-  jxs.style.fontWeight="bolder";
-  jxs.style.fontFamily="monospace";
-  
-}
-  /*this function is end here  */
-  
-
-
-  
-  /*'backbutton1' id ki css starts from here  come out from the certificate section  */
-  
-  function backss()
-    {
-      document.getElementById("resume").innerHTML="<h1 id='ce11'>Certificate 'S</h1><br><h1 id='ce11'> Certificate is not Show the Capbility of Person but <br>it show Consitency Person towards it Goals </h1><button onclick='Certificate()'>Click For See </button>";
-    }
-  
 </script>
-  <audio src="tts_audio_1693361937519.wav" type="audio/wav" id="runsss"></audio>
-  <audio src="tts_audio_1693361955828.mp3" type="audio/mp3" id="runsss1"></audio>
-   <audio src="52 Bars_192(PagalWorld.com.se).mp3" type="audio/mp3" id="runsss2"></audio>
-  
-  <script>
-    function runsss2()
-      {
-        document.getElementById("runsss2").play();
-      }
-        /*About me ka function for play audio of about me */
-    function runss()
-      {
-        var j=document.getElementById("runsss");
-        j.play();
-      }
-
-
-    /*contact me ka function for play audio of contact me */
-      function runss1()
-      {
-        var j=document.getElementById("runsss1");
-        j.play();
-      }
-  </script>
-
-  
-  
-  <script>
-
-
-
-//Mode ki js starts from here 
-
-var mode=()=>{
-          var j=document.getElementsByTagName("body");
-       j[0].style.backgroundColor="black";
-  var q=document.getElementsByClassName("that");
-  q[0].style.backgroundColor="#FFCCFF";
-  q[0].style.border="3px solid yellow";
-
- document.getElementById("mode").innerText="DarkMode";
-
-  
-}
-
-
-        var mode1=()=>{
- document.getElementById("mode").innerText="LightMode";
-
-        }
-
-
-///Promise code which help to run the mode js in both case light and width 
-var modes=()=>{
-    let pro=new Promise(function(resolve,reject)
-{
-    var j=document.getElementById("mode").innerHTML;
-    if(j=="Darkmode")
-  {
-    resolve(mode);
-  //  var contain=document.getElementById("a2");
-    //contain.play();
-  
-  }
-  else if(j=="Lightmode")
-  {
-    reject(mode1);
-    document.getElementById("mode").innerHTML="Darkmode";
-    //var contain=document.getElementById("a1");
-    //contain.play();
-  }
-
-});
-pro.then(
-    function(value)
-    {
-        mode();
-    },
-    function(value)
-    {
-        mode1();
-    }
-);
-
-}//function is end here
-
-
-  </script>
 </body>
 </html>
 
