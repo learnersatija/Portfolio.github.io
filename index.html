@@ -334,9 +334,21 @@ ul li img{
 <style>
   @media (min-width:480px) and (max-width:1100px) 
 {
+
+  /*runphoto id ki css starts from here */
+  #runphoto{
+  position:relative;
+  left:30px;
+  top:20px;
+  }
+#resume h1{
+font-size:40px;
+}
+
+*main id ki css starts from here */
 #main{
   height: 800px;
-  width: 800px;
+  width: 900px;
   border: 4px ;
   margin: auto;
   background-color:#010203;
@@ -353,136 +365,19 @@ font-size:25px;
 }
 /*body ke background ki css startsfrom here */
 body{
-background-color: #37474F;
+background-color: #0e8e337;
 }
-
-.that{
-background-color:pink;
-}
-.that div
-{
-background-color:black;
-}
+/*ul ki css starts from here */
 ul{
-height:80px;
+height:90px;
+font-family:monospace;
+}
+.that{
+background-color:#0e8e337;
 }
 ul li a{
 font-size:30px;
 }
-
-    *{
-        padding: 0;
-        margin: 0;
-    }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0px;
-  overflow: hidden;
-  background-color: lightgray;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: blue;
- font-size:20px;
-  text-align: center;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-.active{
-background-color: gray;
-color: white;
-}
-li a:hover {
-  background-color: orange;
-  color: white;
-}
-
-/*pset id ki css starts from here */
-#pset{
-    position: relative;
-    left: 0px;
-    right: 600px;
-}
-
-/*pset1 id ki css starts from here */
-#pset1{
-    position: relative;
-    left: 0;
-    right: 620px;
-    cursor: pointer;
-}
-ul li img{
-    width: 40px;
-    border-radius: 20px;
-    word-spacing: 10px;
-    cursor: pointer;
-}    
-
-/*main id ki css starts from here */
-#main{
-  height: 800px;
-  width: 870px;
-  border: 4px ;
-  margin: auto;
-  box-shadow:0px 1px 4px 4px rgb(178, 90, 205);
-  box-sizing: border-box;
-  border-radius: 30px;
-  
-}
-/*that class ki css starts from here */
-.that
-{
-  display:  flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}    
-
-
-
-
-  /* Styling for the main contact section */
-  .contact-section {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: #f4f4f4;
-  }
-
-  /* Styling for the left side content */
-  .left-content {
-   
-    padding-right: 0px;
-  }
-
-  /* Styling for the right side content (contact form) */
-  .right-content {
-    flex: 1;
-    background-color: rgba(255, 255, 255, 0.678);
-
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-.that div{
-width:850px;
-height:1450px;
-}
-.that div p{
-font-family:sans-serif;
-font-size:60px;
-}
-#content p{
-font-family:sans-serif;
-font-size:55px;
-}
-
-
   /* Styling for the main contact section */
   .contact-section {
     display: flex;
@@ -505,12 +400,26 @@ font-size:55px;
     flex: 1;
     height:130px;
     width:600px;
-    background-color: rgba(255, 255, 255, 0.678);
+    background-color:gray;
     border: 1px solid #ddd;
     border-radius: 5px;
   }
-
-  /*footer ke ander ke text ki css starts from here*/
+  .right-content{
+  background-color:white;
+  }
+  /*that class ki starts from here */
+.that div
+{
+width:900px;
+height:1300px;
+background-color:black;
+color:aqua;
+}
+/*main ke ander ki image ki css starts from here */
+#main img{
+width:400px;
+}
+/*footer ke ander ke text ki css starts from here*/
 #footer {
 font-size:30px;
 }
@@ -518,6 +427,17 @@ font-size:30px;
 /*footer ke ander h2 ki css starts from here*/
 #footer h2{
 font-size:35px;
+}
+/*that class ke ander ke div ke ander ke p tag ki css starts from here */
+.that div p{
+font-size:45px;
+font-family:monospace;
+font-Style:oblique;
+}
+#content p{
+font-size:45px;
+font-family:monospace;
+font-Style:oblique;
 }
 /*resume id ke ander ki css starts from here */
 #resume img{
@@ -527,12 +447,74 @@ right:40px;
 box-sizing:border-box;
 height:1100px;
 }
-
-/*ce11 id ki css start from here */
-#ce11{
-font-family:sans;
-color:#FFFF00;
+/*that class ke ander ke overflow ki css starts from here */
+.that div
+{
+overflow:
 }
+    /*btn id ki css starts from here */
+    #btn{
+      width:200px;
+      height:100px;
+      border:3px solid aqua;
+      color:white;
+      margin-top:300px;
+      margin-left:500px;
+      font-size:20px;
+      background-color:black;
+      font-family:monospace;
+      position:relative;
+      bottom:12px;
+      left:100px;
+  }
+/*cert1 id ki css starts from here */
+#cert1{
+position:relative;
+top:280px;
+}
+
+    /*cert2 id ki css starts from here */
+#cert2{
+position:relative;
+top:280px;
+}
+/*cert3 id ki css starts from here */
+#cert3{
+position:relative;
+top:280px;
+}
+
+      /* Style for the container div */
+        .portfolio-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 2px solid pink;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        /* Style for the video element */
+        video {
+            width: 100%;
+            max-height: 400px;
+            border-radius: 10px;
+        }
+
+        /* Additional styles for the portfolio content */
+        h1 {
+            font-size: 34px;
+            color: aqua;
+        }
+
+        .portfolio-container  p {
+            font-size: 18px;
+            color:black;
+        }
+
+  
 }
 
 </style>
