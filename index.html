@@ -1041,7 +1041,6 @@ setInterval(  function main()
     var j=document.getElementById("setmore").innerHTML;
     var jj=document.getElementById("setmore");
     jj.innerHTML="Welcome on My <br> ";
-    jj.style.fontStyle="italic";
     jj.style.fontFamily="sans";
     jj.style.fontWeight="bolder"
     jj.style.color="green";
@@ -1278,7 +1277,13 @@ var mode=()=>{
   var q=document.getElementsByClassName("that");
   q[0].style.backgroundColor="#00CCFF";
   q[0].style.border="3px solid white";
-           document.getElementById("mode").innerText="Lightmode";
+  var j=document.getElementById("that");
+  var run=j.getElementById("div");
+   for(x of run)
+     {
+       x[i].style.color="white";
+     }
+  document.getElementById("mode").innerText="Lightmode";
         }
 
 
