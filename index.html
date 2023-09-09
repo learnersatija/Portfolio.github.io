@@ -1420,12 +1420,11 @@ metothat();
 
 var mode=()=>{
           var j=document.getElementsByTagName("body");
-       j[0].style.backgroundColor="white";
+       j[0].style.backgroundColor="black";
   var q=document.getElementsByClassName("that");
-  q[0].style.backgroundColor="black";
+  q[0].style.backgroundColor="pink";
   q[0].style.color="white";
-  q[0].style.border="5px solid aqua";
-
+  q[0].style.border="5px solid yellow";
  document.getElementById("mode").innerHTML="Darkmode";
 
   
@@ -1451,7 +1450,7 @@ var modes=()=>{
   {
     resolve(mode);
   }
-  else if(j=="Lightmode")
+  else
   {
     reject(mode1);
   }
