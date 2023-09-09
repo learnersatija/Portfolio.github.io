@@ -1420,12 +1420,13 @@ metothat();
 
 var mode=()=>{
           var j=document.getElementsByTagName("body");
-       j[0].style.backgroundColor="black";
+       j[0].style.backgroundColor="white";
   var q=document.getElementsByClassName("that");
   q[0].style.backgroundColor="black";
-  q[0].style.border="5px dashed yellow";
+  q[0].style.color="white";
+  q[0].style.border="5px solid aqua";
 
- document.getElementById("mode").innerText="Darkmode";
+ document.getElementById("mode").innerHTML="Darkmode";
 
   
 }
@@ -1434,9 +1435,10 @@ var mode=()=>{
         var mode1=()=>{
 
   var q=document.getElementsByClassName("that");
-  q[0].style.color="white";
-  q[0].style.border="3px solid white";
-
+  q[0].style.color="aqua";
+  q[0].style.backgroundColor="black";
+  q[0].style.border="5px solid white";
+   document.getElementById("mode").innerHTML="Darkmode";
         }
 
 
@@ -1459,12 +1461,10 @@ pro.then(
     function(value)
     {
         mode();
-  document.getElementById("mode").innerText="Lightmode";
     },
     function(value)
     {
         mode1();
-          document.getElementById("mode").innerHTML="Darkmode";
     }
 );
 
