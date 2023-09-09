@@ -1002,13 +1002,13 @@ ul li img{
 </div>
 
 <br><br><br><br><br><br><br id="aboutme">
-<div id="thatmain"> <h1> ABOUT ME</h1>
+<div id="thatmain"> <h1 class="geth1"> ABOUT ME</h1>
   <br><br>
 <div class="that">
    <div><img src="icon1.png" alt="" width="120px" height="120px"><h2>Introduction</h2><p>Hello and welcome to my portfolio website! I am thrilled to have you here. My name is Priyanshu Satija, and I am a passionate for My IT career with a strong dedication towards my skill . Through this platform, I am excited to take you on a journey through my professional experiences, creative endeavors, and accomplishments.</p></div>
   <div id="content"><img src="icon2.png" alt="" width="120px" height="120px"><h2>Skills</h2><p>"I excel in a range of technical skills crucial for crafting dynamic web applications. With expertise in C++, HTML, CSS, and JavaScript, I create captivating user interfaces and seamless functionality. My proficiency extends to Oracle databases, ensuring efficient and secure data management. I'm skilled in JSP (JavaServer Pages) for dynamic web content and possess a solid foundation in Data Structures and Algorithms, enhancing my problem-solving abilities. Explore my portfolio to see these skills in action, showcasing my dedication to delivering top-notch web experiences."    </p></div>
   <div id="content" ><img src="guitar.png" alt="" width="120px" height="120px"><h2>Hobbies</h2><p>"In my leisuresd time, I find joy in spending quality moments with both family and friends, cherishing the essence of life through shared experiences. I am an avid enthusiast of podcasts, often exploring diverse topics on YouTube. Additionally, I'm passionate about playing cricket, which not only fuels my competitive spirit but also fosters teamwork. During moments of relaxation, I engage in typing practice, refining my skills in pursuit of efficiency and accuracy."</p></div>
-  <div id="resume"><h1 id="ce11">Certificate 'S</h1><br><h1 id="ce11"> Certificate is not Show the Capbility of Person but <br>it show Consitency Person towards it Goals </h1><button onclick="Certificate()" id="btn">Click For See </button></div/>
+  <div id="resume"><h1 id="ce11" class="geth1">Certificate 'S</h1><br><h1 id="ce11"> Certificate is not Show the Capbility of Person but <br>it show Consitency Person towards it Goals </h1><button onclick="Certificate()" id="btn">Click For See </button></div/>
 <br>
 
 </div>
@@ -1020,7 +1020,7 @@ ul li img{
 
 <br><br><br>
    <div class="portfolio-container">
-        <h1>My Portfolio</h1>
+        <h1 class="geth1">My Portfolio</h1>
         <p>Welcome to my portfolio! Here's a video showcasing some of my work:</p>
         <video controls>
             <source src="video1.mp4" type="video/mp4">
@@ -1068,7 +1068,7 @@ ul li img{
     <p>Designed and built by Priyanshu Satija.</p>
   </div>
   <div>
-  <h1 id="mode" onclick="mode()">Lightmode</h1>
+  <h1 id="mode" onclick="mode()" class="geth1">Lightmode</h1>
     <a href="https://wa.me/qr/GRXJXR7TYMF5O1">    <abbr title="Gmail-ID">  <img src="whatsapp.png" alt=""  id="gmail"></abbr></a>
   </div>
 </div>
@@ -1420,24 +1420,38 @@ metothat();
 
 var mode=()=>{
           var j=document.getElementsByTagName("body");
-       j[0].style.backgroundColor="black";
+       j[0].style.backgroundColor="white";
   var q=document.getElementsByClassName("that");
-  q[0].style.backgroundColor="pink";
+  q[0].style.backgroundColor="white";
   q[0].style.color="white";
   q[0].style.border="5px solid yellow";
  document.getElementById("mode").innerHTML="Darkmode";
-
+var ok=document.getElementsByClassName("geth1");
+        ok=Array.from(ok)
+        for(var i=0;i<ok.length;i++)
+          {
+            ok[i].style.color="black";
+          }
   
 }
 
 
         var mode1=()=>{
-
+          var j=document.getElementsByTagName("body");
+       j[0].style.backgroundColor="black";
   var q=document.getElementsByClassName("that");
   q[0].style.color="aqua";
   q[0].style.backgroundColor="black";
   q[0].style.border="5px solid white";
-   document.getElementById("mode").innerHTML="Darkmode";
+   document.getElementById("mode").innerHTML="Lightmode";
+          class="geth1"
+          var ok=document.getElementsByClassName("geth1");
+        ok=Array.from(ok)
+        for(var i=0;i<ok.length;i++)
+          {
+            ok[i].style.color="aqua";
+          }
+        
         }
 
 
