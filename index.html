@@ -1,3 +1,13 @@
+<%-- 
+    Document   : git.jsp
+    Created on : Sep 20, 2023, 6:15:49 PM
+    Author     : Priyanshu Satija
+--%>
+
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -105,7 +115,6 @@ ul li img{
 /*that class ki css starts from here */
 .that
 {
-    background-color:;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -656,7 +665,7 @@ top:280px;
 font-size:40px;
 }
 
-*main id ki css starts from here */
+/*main id ki css starts from here */
 #main{
   height: 800px;
   width: 900px;
@@ -856,14 +865,14 @@ height:1100px;
     <h2>Contact Us</h2>
     <form>
       <label for="name">Name:</label>
-      <input type="text\" id="name" name="name" required placeholder="Enter your name">
+      <input type="text" name="first" required placeholder="Enter your name">
       <br>
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required placeholder="Enter your Email -ID">
+      <input type="email" id="email" name="first1" required placeholder="Enter your Email -ID">
       
       <label for="message">Message:</label>
       
-      <textarea name="jk" id="ok" cols="10" rows="4"></textarea>
+      <textarea name="first2" id="ok" cols="10" rows="4"></textarea>
       <button type="submit">Submit</button>
     </form>
   </div>
@@ -1309,7 +1318,16 @@ pro.then(
 
 
   </script>
-
+  <%
+      String ok1=request.getParameter("first");
+      String ok2=request.getParameter("first1");
+      String ok3=request.getParameter("first2");
+  Class.forName("oracle.jdbc.driver.OracleDriver");
+  Connection obj=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system", "my");
+  Statement objs=obj.createStatement();
+  objs.execute("insert into portfolio values('"+ok1+"','"+ok2+"','"+ok3+"')");
+  %>
+  
 </body>
 </html>
 
