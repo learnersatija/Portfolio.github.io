@@ -1103,7 +1103,7 @@ metothat();
     
     /*Function for Providing the Certificate1 */
 var Certificate1=()=>{
-document.getElementById("resume").innerHTML='<h1>Certificate</h1><br><img src="hartorn.jpg" id="runphoto"> <button id="cert1" onclick="Certificate()">1</button> <button id="cert2" onclick="Certificate1()">2</button> <button id="cert3">3</button>  <button id="btn" id="backbutton1" onclick="backss()"> <- BACK</button>'
+document.getElementById("resume").innerHTML='<h1>Certificate</h1><br><img src="hartorn.jpg" id="runphoto"> <button id="cert1" onclick="Certificate()">1</button> <button id="cert2" onclick="Certificate1()">2</button> <button id="cert3"  onclick="Certificate3()" >3</button>  <button id="btn" id="backbutton1" onclick="backss()"> <- BACK</button>'
 var control=document.getElementById("btn");
 control.style.color="white";
 control.style.width="130px";
@@ -1307,10 +1307,24 @@ pro.then(
 
 }//function is end here
 
-function Certificate3()
-  {
-    document.getElementById("cert3").innerHTML="TCS CERTIFICATE_page-0001.jpg";
-  }
+    /*Function for Providing the Certificate1 */
+var Certificate3=()=>{
+document.getElementById("resume").innerHTML='<h1>Certificate</h1><br><img src="TCS CERTIFICATE_page-0001.jpg" id="runphoto"> <button id="cert1" onclick="Certificate()">1</button> <button id="cert2" onclick="Certificate1()">2</button> <button id="cert3" onclick="Certificate3()">3</button>  <button id="btn" id="backbutton1" onclick="backss()"> <- BACK</button>'
+var control=document.getElementById("btn");
+control.style.color="white";
+control.style.width="130px";
+control.style.height="70px";
+control.style.fontSize="25px";
+control.style.background="black";
+
+control.style.borderRadius="20%";
+control.style.border="4px solid aqua";
+
+control.style.position="relative";
+control.style.bottom="250px";
+control.style.left="70px";
+
+/*this is for increase the height of resume id related div*/
     
   </script>
   
